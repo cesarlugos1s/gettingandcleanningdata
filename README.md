@@ -10,7 +10,7 @@ This document describes the work created to analyze some statistical data that c
 that gathered information of some persons performing some activities while using some wearable
 devices, which recorded some relevant information regarding those activities.
 
-The final result is to obtain a dataset named (selecteddataaverages) that contains averages of
+The final result is to obtain a dataset (named selecteddataaverages here) that contains averages of
 some selected data grouped by activity performed and by the subject who performed the activity.
 
 The source data represent data collected from the accelerometers from the Samsung Galaxy S smartphone. 
@@ -23,14 +23,15 @@ Here you can find the source data used in this project:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 All data referecend heere is contained in the directory UCI HAR Dataset within the zip file.
-Please note all directories referenced in this document are mentions to a relative path to that UCI HAR Dataset directory.
+Please note all directories and files referenced in this document below are mentions to a relative path to that UCI HAR Dataset directory.
 
 As explained in the the "README.txt" file, data was stored and made available to the public in multiple files. 
 From those files, we used the main data, as follows:
 
-The "test" directory contains a portion of the gathered data, used for testing hypotesis performed on the data.
-The "train" directory contains another portion of the gathered data, used for some observation process leading to hypotesis creation.
-- "features.txt" . I obtained from this file the variable names for each data colum of the "test/X_test.txt" and "train/X_train" file.
+- The "test" directory contains a portion of the gathered data, used for testing hypotesis performed on the data.
+- The "train" directory contains another portion of the gathered data, used for some observation process leading to hypotesis creation.
+- "features.txt" . I obtained from this file the variable names for each data colum of the "test/X_test.txt" and "train/X_train" files.
+- "activity_labels". I used this file contents to assign a more descriptive name to each activity, in addition and per reference to the activity numeric code in the "test/X_test.txt" and "train/X_train" files.
 
 from each of those directories, the analysis performed in this work process uses the following files:
 - "test/X_test.txt". I obtained from this file the first portion of the data set.
