@@ -1,8 +1,8 @@
 # Getting and Cleanning Data
 
-Author: Cesar Lugo
-Version: 1.0
-Version release date: February 17, 2016
+Author: Cesar Lugo.
+Version: 1.0 .
+Version release date: February 17,  .
 Subject: Getting and Cleanning data, Data Science specialization, assignment.
 
 
@@ -38,17 +38,21 @@ from each of those directories, the analysis performed in this work process uses
 - "test/y_test.txt". I obtained from this file an additional column containing the activity code of the activity performed each the activities measured on the "test/X_test.txt" file.
 
 - "train/X_train.txt". I obtained from this file the first portion of the data set.
-- "train/subject_train.txt". I obtained from this file an additional column containing the subject who performed each the activity on the "test/X_test.txt" file.
-- "train/y_train.txt". I obtained from this file an additional column containing the activity code of the activity performed each the activities measured on the "test/X_test.txt" file.
+- "train/subject_train.txt". I obtained from this file an additional column containing the subject who performed each the activity on the "train/X_train.txt" file.
+- "train/y_train.txt". I obtained from this file an additional column containing the activity code of the activity performed each the activities measured on the "train/X_train.txt" file.
 
-All data from the directories named "Inertial Signals" was not considered in this work, because this information was already processed by the original authors into the other files I used sumarized above.
+All data from the directories named "Inertial Signals" was not considered in this work, because this information was already processed by the original authors into the other files I used, sumarized above.
 
-To obtain the full dataset, I combined the test and train data into one dataset (mergeddata), as explained in the details section below.
+To obtain the full dataset, I combined the test and train data into one dataset (mergeddata), selected some of the columns containing averages and standard deviations, and performed calculation of averages for each variable grouped by activity and subject, in 5 steps, as explained in the details section below.
 
 
 ## Details Section
 
-The run_analysis function contained here was created in this work, and it does the following: 
+The run_analysis function contained here was created in this work.
+
+You can find this run_anaysis function source code in this repository, with the name "run_analysis.R"
+
+. The function does the following: 
 
 Step 1. Merges the training and the test sets to create one data set.
 Step 2. Extracts only the measurements on the mean and standard deviation for each measurement.
@@ -114,3 +118,4 @@ Step 5. From the data set in step 4, creates a second, independent tidy data set
 I have included the activity.name in addition to the activity (and subject). It does not alter the grouping, and the contents are more clear to understand.
 Eliminate the last 2 columns no longer needed, which do not contain numeric average data
 
+You can find this run_anaysis function source code in this repository, with the name "run_analysis.R"
