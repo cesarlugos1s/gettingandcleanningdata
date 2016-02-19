@@ -2,7 +2,7 @@
 
 Author: Cesar Lugo.
 Version: 1.0 .
-Version release date: February 17,  .
+Version release date: February 19, 2016 .
 Subject: Getting and Cleanning data, Data Science specialization, assignment.
 
 ## Study Design
